@@ -1,0 +1,27 @@
+{
+  "github": {
+    "username": "YOUR_GITHUB_USERNAME",
+    "email": "YOUR_EMAIL@example.com",
+    "personal_access_token": "YOUR_PERSONAL_ACCESS_TOKEN",
+    "default_branch": "main",
+    "repositories": {
+      "outlook_scheduler": {
+        "name": "YOUR_REPO_NAME",
+        "url": "https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git",
+        "description": "MS365環境での複数人スケジュール調整を効率化するデスクトップアプリケーション"
+      }
+    }
+  },
+  "git": {
+    "user_name": "YOUR_GITHUB_USERNAME",
+    "user_email": "YOUR_EMAIL@example.com",
+    "default_editor": "nano",
+    "auto_setup": true
+  },
+  "claude_code": {
+    "project_base_path": "/root/my-project",
+    "default_language": "ja",
+    "auto_commit": false,
+    "auto_push": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "github": {
+    "username": "YOUR_GITHUB_USERNAME",
+    "email": "your.email@example.com",
+    "personal_access_token": "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN_HERE"
+  },
+  "git": {
+    "user_name": "YOUR_GITHUB_USERNAME",
+    "user_email": "your.email@example.com"
+  },
+  "settings": {
+    "auto_commit": false,
+    "default_branch": "main",
+    "commit_message_prefix": "[Claude Code]"
+  },
+  "notifications": {
+    "enabled": true,
+    "popup_notifications": true,
+    "sound_notifications": false,
+    "always_notify": true,
+    "hook_events": "all"
+  }
+}
