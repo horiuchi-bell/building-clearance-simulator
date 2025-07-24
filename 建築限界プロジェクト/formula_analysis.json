@@ -1,0 +1,6368 @@
+{
+  "trigonometric_analysis": {
+    "表示データ計算シート　片線": [
+      {
+        "position": "I2",
+        "row": 2,
+        "col": 9,
+        "formula": "=IF(D2<0,(ATAN(D2/1067)+2*PI()),ATAN(D2/1067))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "D2"
+        ],
+        "constants": [
+          "1067",
+          "2",
+          "0"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "S3",
+        "row": 3,
+        "col": 19,
+        "formula": "=IF(AND(O3=0,P3=0),0,IF(AND(O3=0,P3>0),PI()/2,IF(AND(O3=0,P3<0),PI()/2*-1,ATAN(P3/O3))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O3",
+          "P3"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA3",
+        "row": 3,
+        "col": 27,
+        "formula": "=W3*COS(X3)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W3",
+          "X3"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB3",
+        "row": 3,
+        "col": 28,
+        "formula": "=W3*SIN(X3)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W3",
+          "X3"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S4",
+        "row": 4,
+        "col": 19,
+        "formula": "=IF(AND(O4=0,P4=0),0,IF(AND(O4=0,P4>0),PI()/2,IF(AND(O4=0,P4<0),PI()/2*-1,ATAN(P4/O4))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O4",
+          "P4"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA4",
+        "row": 4,
+        "col": 27,
+        "formula": "=W4*COS(X4)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X4",
+          "W4"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB4",
+        "row": 4,
+        "col": 28,
+        "formula": "=W4*SIN(X4)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X4",
+          "W4"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S5",
+        "row": 5,
+        "col": 19,
+        "formula": "=IF(AND(O5=0,P5=0),0,IF(AND(O5=0,P5>0),PI()/2,IF(AND(O5=0,P5<0),PI()/2*-1,ATAN(P5/O5))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O5",
+          "P5"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA5",
+        "row": 5,
+        "col": 27,
+        "formula": "=W5*COS(X5)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X5",
+          "W5"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB5",
+        "row": 5,
+        "col": 28,
+        "formula": "=W5*SIN(X5)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X5",
+          "W5"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S6",
+        "row": 6,
+        "col": 19,
+        "formula": "=IF(AND(O6=0,P6=0),0,IF(AND(O6=0,P6>0),PI()/2,IF(AND(O6=0,P6<0),PI()/2*-1,ATAN(P6/O6))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O6",
+          "P6"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA6",
+        "row": 6,
+        "col": 27,
+        "formula": "=W6*COS(X6)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W6",
+          "X6"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB6",
+        "row": 6,
+        "col": 28,
+        "formula": "=W6*SIN(X6)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W6",
+          "X6"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S7",
+        "row": 7,
+        "col": 19,
+        "formula": "=IF(AND(O7=0,P7=0),0,IF(AND(O7=0,P7>0),PI()/2,IF(AND(O7=0,P7<0),PI()/2*-1,ATAN(P7/O7))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P7",
+          "O7"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA7",
+        "row": 7,
+        "col": 27,
+        "formula": "=W7*COS(X7)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X7",
+          "W7"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB7",
+        "row": 7,
+        "col": 28,
+        "formula": "=W7*SIN(X7)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X7",
+          "W7"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S8",
+        "row": 8,
+        "col": 19,
+        "formula": "=IF(AND(O8=0,P8=0),0,IF(AND(O8=0,P8>0),PI()/2,IF(AND(O8=0,P8<0),PI()/2*-1,ATAN(P8/O8))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O8",
+          "P8"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA8",
+        "row": 8,
+        "col": 27,
+        "formula": "=W8*COS(X8)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W8",
+          "X8"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB8",
+        "row": 8,
+        "col": 28,
+        "formula": "=W8*SIN(X8)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W8",
+          "X8"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S9",
+        "row": 9,
+        "col": 19,
+        "formula": "=IF(AND(O9=0,P9=0),0,IF(AND(O9=0,P9>0),PI()/2,IF(AND(O9=0,P9<0),PI()/2*-1,ATAN(P9/O9))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O9",
+          "P9"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA9",
+        "row": 9,
+        "col": 27,
+        "formula": "=W9*COS(X9)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W9",
+          "X9"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB9",
+        "row": 9,
+        "col": 28,
+        "formula": "=W9*SIN(X9)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W9",
+          "X9"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S10",
+        "row": 10,
+        "col": 19,
+        "formula": "=IF(AND(O10=0,P10=0),0,IF(AND(O10=0,P10>0),PI()/2,IF(AND(O10=0,P10<0),PI()/2*-1,ATAN(P10/O10))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P10",
+          "O10"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA10",
+        "row": 10,
+        "col": 27,
+        "formula": "=W10*COS(X10)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W10",
+          "X10"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB10",
+        "row": 10,
+        "col": 28,
+        "formula": "=W10*SIN(X10)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W10",
+          "X10"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S11",
+        "row": 11,
+        "col": 19,
+        "formula": "=IF(AND(O11=0,P11=0),0,IF(AND(O11=0,P11>0),PI()/2,IF(AND(O11=0,P11<0),PI()/2*-1,ATAN(P11/O11))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O11",
+          "P11"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA11",
+        "row": 11,
+        "col": 27,
+        "formula": "=W11*COS(X11)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X11",
+          "W11"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB11",
+        "row": 11,
+        "col": 28,
+        "formula": "=W11*SIN(X11)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X11",
+          "W11"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S12",
+        "row": 12,
+        "col": 19,
+        "formula": "=IF(AND(O12=0,P12=0),0,IF(AND(O12=0,P12>0),PI()/2,IF(AND(O12=0,P12<0),PI()/2*-1,ATAN(P12/O12))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O12",
+          "P12"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA12",
+        "row": 12,
+        "col": 27,
+        "formula": "=W12*COS(X12)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X12",
+          "W12"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB12",
+        "row": 12,
+        "col": 28,
+        "formula": "=W12*SIN(X12)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X12",
+          "W12"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S13",
+        "row": 13,
+        "col": 19,
+        "formula": "=IF(AND(O13=0,P13=0),0,IF(AND(O13=0,P13>0),PI()/2,IF(AND(O13=0,P13<0),PI()/2*-1,ATAN(P13/O13))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O13",
+          "P13"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA13",
+        "row": 13,
+        "col": 27,
+        "formula": "=W13*COS(X13)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W13",
+          "X13"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB13",
+        "row": 13,
+        "col": 28,
+        "formula": "=W13*SIN(X13)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W13",
+          "X13"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S14",
+        "row": 14,
+        "col": 19,
+        "formula": "=IF(AND(O14=0,P14=0),0,IF(AND(O14=0,P14>0),PI()/2,IF(AND(O14=0,P14<0),PI()/2*-1,ATAN(P14/O14))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P14",
+          "O14"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA14",
+        "row": 14,
+        "col": 27,
+        "formula": "=W14*COS(X14)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W14",
+          "X14"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB14",
+        "row": 14,
+        "col": 28,
+        "formula": "=W14*SIN(X14)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W14",
+          "X14"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S15",
+        "row": 15,
+        "col": 19,
+        "formula": "=IF(AND(O15=0,P15=0),0,IF(AND(O15=0,P15>0),PI()/2,IF(AND(O15=0,P15<0),PI()/2*-1,ATAN(P15/O15))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O15",
+          "P15"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA15",
+        "row": 15,
+        "col": 27,
+        "formula": "=W15*COS(X15)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X15",
+          "W15"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB15",
+        "row": 15,
+        "col": 28,
+        "formula": "=W15*SIN(X15)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X15",
+          "W15"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S16",
+        "row": 16,
+        "col": 19,
+        "formula": "=IF(AND(O16=0,P16=0),0,IF(AND(O16=0,P16>0),PI()/2,IF(AND(O16=0,P16<0),PI()/2*-1,ATAN(P16/O16))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O16",
+          "P16"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA16",
+        "row": 16,
+        "col": 27,
+        "formula": "=W16*COS(X16)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W16",
+          "X16"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB16",
+        "row": 16,
+        "col": 28,
+        "formula": "=W16*SIN(X16)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W16",
+          "X16"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S17",
+        "row": 17,
+        "col": 19,
+        "formula": "=IF(AND(O17=0,P17=0),0,IF(AND(O17=0,P17>0),PI()/2,IF(AND(O17=0,P17<0),PI()/2*-1,ATAN(P17/O17))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P17",
+          "O17"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA17",
+        "row": 17,
+        "col": 27,
+        "formula": "=W17*COS(X17)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W17",
+          "X17"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB17",
+        "row": 17,
+        "col": 28,
+        "formula": "=W17*SIN(X17)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W17",
+          "X17"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S18",
+        "row": 18,
+        "col": 19,
+        "formula": "=IF(AND(O18=0,P18=0),0,IF(AND(O18=0,P18>0),PI()/2,IF(AND(O18=0,P18<0),PI()/2*-1,ATAN(P18/O18))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O18",
+          "P18"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA18",
+        "row": 18,
+        "col": 27,
+        "formula": "=W18*COS(X18)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W18",
+          "X18"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB18",
+        "row": 18,
+        "col": 28,
+        "formula": "=W18*SIN(X18)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W18",
+          "X18"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S19",
+        "row": 19,
+        "col": 19,
+        "formula": "=IF(AND(O19=0,P19=0),0,IF(AND(O19=0,P19>0),PI()/2,IF(AND(O19=0,P19<0),PI()/2*-1,ATAN(P19/O19))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P19",
+          "O19"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA19",
+        "row": 19,
+        "col": 27,
+        "formula": "=W19*COS(X19)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W19",
+          "X19"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB19",
+        "row": 19,
+        "col": 28,
+        "formula": "=W19*SIN(X19)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W19",
+          "X19"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S20",
+        "row": 20,
+        "col": 19,
+        "formula": "=IF(AND(O20=0,P20=0),0,IF(AND(O20=0,P20>0),PI()/2,IF(AND(O20=0,P20<0),PI()/2*-1,ATAN(P20/O20))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P20",
+          "O20"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA20",
+        "row": 20,
+        "col": 27,
+        "formula": "=W20*COS(X20)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W20",
+          "X20"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB20",
+        "row": 20,
+        "col": 28,
+        "formula": "=W20*SIN(X20)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W20",
+          "X20"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S21",
+        "row": 21,
+        "col": 19,
+        "formula": "=IF(AND(O21=0,P21=0),0,IF(AND(O21=0,P21>0),PI()/2,IF(AND(O21=0,P21<0),PI()/2*-1,ATAN(P21/O21))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P21",
+          "O21"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA21",
+        "row": 21,
+        "col": 27,
+        "formula": "=W21*COS(X21)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X21",
+          "W21"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB21",
+        "row": 21,
+        "col": 28,
+        "formula": "=W21*SIN(X21)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X21",
+          "W21"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S22",
+        "row": 22,
+        "col": 19,
+        "formula": "=IF(AND(O22=0,P22=0),0,IF(AND(O22=0,P22>0),PI()/2,IF(AND(O22=0,P22<0),PI()/2*-1,ATAN(P22/O22))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P22",
+          "O22"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA22",
+        "row": 22,
+        "col": 27,
+        "formula": "=W22*COS(X22)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W22",
+          "X22"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB22",
+        "row": 22,
+        "col": 28,
+        "formula": "=W22*SIN(X22)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W22",
+          "X22"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S23",
+        "row": 23,
+        "col": 19,
+        "formula": "=IF(AND(O23=0,P23=0),0,IF(AND(O23=0,P23>0),PI()/2,IF(AND(O23=0,P23<0),PI()/2*-1,ATAN(P23/O23))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P23",
+          "O23"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA23",
+        "row": 23,
+        "col": 27,
+        "formula": "=W23*COS(X23)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X23",
+          "W23"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB23",
+        "row": 23,
+        "col": 28,
+        "formula": "=W23*SIN(X23)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X23",
+          "W23"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S24",
+        "row": 24,
+        "col": 19,
+        "formula": "=IF(AND(O24=0,P24=0),0,IF(AND(O24=0,P24>0),PI()/2,IF(AND(O24=0,P24<0),PI()/2*-1,ATAN(P24/O24))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P24",
+          "O24"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA24",
+        "row": 24,
+        "col": 27,
+        "formula": "=W24*COS(X24)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W24",
+          "X24"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB24",
+        "row": 24,
+        "col": 28,
+        "formula": "=W24*SIN(X24)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W24",
+          "X24"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S25",
+        "row": 25,
+        "col": 19,
+        "formula": "=IF(AND(O25=0,P25=0),0,IF(AND(O25=0,P25>0),PI()/2,IF(AND(O25=0,P25<0),PI()/2*-1,ATAN(P25/O25))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P25",
+          "O25"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA25",
+        "row": 25,
+        "col": 27,
+        "formula": "=W25*COS(X25)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X25",
+          "W25"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB25",
+        "row": 25,
+        "col": 28,
+        "formula": "=W25*SIN(X25)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X25",
+          "W25"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S26",
+        "row": 26,
+        "col": 19,
+        "formula": "=IF(AND(O26=0,P26=0),0,IF(AND(O26=0,P26>0),PI()/2,IF(AND(O26=0,P26<0),PI()/2*-1,ATAN(P26/O26))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P26",
+          "O26"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA26",
+        "row": 26,
+        "col": 27,
+        "formula": "=W26*COS(X26)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W26",
+          "X26"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB26",
+        "row": 26,
+        "col": 28,
+        "formula": "=W26*SIN(X26)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W26",
+          "X26"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S27",
+        "row": 27,
+        "col": 19,
+        "formula": "=IF(AND(O27=0,P27=0),0,IF(AND(O27=0,P27>0),PI()/2,IF(AND(O27=0,P27<0),PI()/2*-1,ATAN(P27/O27))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P27",
+          "O27"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA27",
+        "row": 27,
+        "col": 27,
+        "formula": "=W27*COS(X27)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X27",
+          "W27"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB27",
+        "row": 27,
+        "col": 28,
+        "formula": "=W27*SIN(X27)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X27",
+          "W27"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S28",
+        "row": 28,
+        "col": 19,
+        "formula": "=IF(AND(O28=0,P28=0),0,IF(AND(O28=0,P28>0),PI()/2,IF(AND(O28=0,P28<0),PI()/2*-1,ATAN(P28/O28))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O28",
+          "P28"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA28",
+        "row": 28,
+        "col": 27,
+        "formula": "=W28*COS(X28)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X28",
+          "W28"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB28",
+        "row": 28,
+        "col": 28,
+        "formula": "=W28*SIN(X28)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X28",
+          "W28"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S29",
+        "row": 29,
+        "col": 19,
+        "formula": "=IF(AND(O29=0,P29=0),0,IF(AND(O29=0,P29>0),PI()/2,IF(AND(O29=0,P29<0),PI()/2*-1,ATAN(P29/O29))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P29",
+          "O29"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA29",
+        "row": 29,
+        "col": 27,
+        "formula": "=W29*COS(X29)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X29",
+          "W29"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB29",
+        "row": 29,
+        "col": 28,
+        "formula": "=W29*SIN(X29)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X29",
+          "W29"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S30",
+        "row": 30,
+        "col": 19,
+        "formula": "=IF(AND(O30=0,P30=0),0,IF(AND(O30=0,P30>0),PI()/2,IF(AND(O30=0,P30<0),PI()/2*-1,ATAN(P30/O30))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P30",
+          "O30"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA30",
+        "row": 30,
+        "col": 27,
+        "formula": "=W30*COS(X30)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X30",
+          "W30"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB30",
+        "row": 30,
+        "col": 28,
+        "formula": "=W30*SIN(X30)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X30",
+          "W30"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S31",
+        "row": 31,
+        "col": 19,
+        "formula": "=IF(AND(O31=0,P31=0),0,IF(AND(O31=0,P31>0),PI()/2,IF(AND(O31=0,P31<0),PI()/2*-1,ATAN(P31/O31))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P31",
+          "O31"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA31",
+        "row": 31,
+        "col": 27,
+        "formula": "=W31*COS(X31)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X31",
+          "W31"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB31",
+        "row": 31,
+        "col": 28,
+        "formula": "=W31*SIN(X31)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X31",
+          "W31"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S32",
+        "row": 32,
+        "col": 19,
+        "formula": "=IF(AND(O32=0,P32=0),0,IF(AND(O32=0,P32>0),PI()/2,IF(AND(O32=0,P32<0),PI()/2*-1,ATAN(P32/O32))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P32",
+          "O32"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA32",
+        "row": 32,
+        "col": 27,
+        "formula": "=W32*COS(X32)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X32",
+          "W32"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB32",
+        "row": 32,
+        "col": 28,
+        "formula": "=W32*SIN(X32)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X32",
+          "W32"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S33",
+        "row": 33,
+        "col": 19,
+        "formula": "=IF(AND(O33=0,P33=0),0,IF(AND(O33=0,P33>0),PI()/2,IF(AND(O33=0,P33<0),PI()/2*-1,ATAN(P33/O33))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O33",
+          "P33"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA33",
+        "row": 33,
+        "col": 27,
+        "formula": "=W33*COS(X33)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X33",
+          "W33"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB33",
+        "row": 33,
+        "col": 28,
+        "formula": "=W33*SIN(X33)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X33",
+          "W33"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S34",
+        "row": 34,
+        "col": 19,
+        "formula": "=IF(AND(O34=0,P34=0),0,IF(AND(O34=0,P34>0),PI()/2,IF(AND(O34=0,P34<0),PI()/2*-1,ATAN(P34/O34))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P34",
+          "O34"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA34",
+        "row": 34,
+        "col": 27,
+        "formula": "=W34*COS(X34)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X34",
+          "W34"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB34",
+        "row": 34,
+        "col": 28,
+        "formula": "=W34*SIN(X34)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X34",
+          "W34"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S35",
+        "row": 35,
+        "col": 19,
+        "formula": "=IF(AND(O35=0,P35=0),0,IF(AND(O35=0,P35>0),PI()/2,IF(AND(O35=0,P35<0),PI()/2*-1,ATAN(P35/O35))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P35",
+          "O35"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA35",
+        "row": 35,
+        "col": 27,
+        "formula": "=W35*COS(X35)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X35",
+          "W35"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB35",
+        "row": 35,
+        "col": 28,
+        "formula": "=W35*SIN(X35)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X35",
+          "W35"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S36",
+        "row": 36,
+        "col": 19,
+        "formula": "=IF(AND(O36=0,P36=0),0,IF(AND(O36=0,P36>0),PI()/2,IF(AND(O36=0,P36<0),PI()/2*-1,ATAN(P36/O36))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O36",
+          "P36"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA36",
+        "row": 36,
+        "col": 27,
+        "formula": "=W36*COS(X36)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W36",
+          "X36"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB36",
+        "row": 36,
+        "col": 28,
+        "formula": "=W36*SIN(X36)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W36",
+          "X36"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S37",
+        "row": 37,
+        "col": 19,
+        "formula": "=IF(AND(O37=0,P37=0),0,IF(AND(O37=0,P37>0),PI()/2,IF(AND(O37=0,P37<0),PI()/2*-1,ATAN(P37/O37))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O37",
+          "P37"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA37",
+        "row": 37,
+        "col": 27,
+        "formula": "=W37*COS(X37)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X37",
+          "W37"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB37",
+        "row": 37,
+        "col": 28,
+        "formula": "=W37*SIN(X37)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X37",
+          "W37"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S38",
+        "row": 38,
+        "col": 19,
+        "formula": "=IF(AND(O38=0,P38=0),0,IF(AND(O38=0,P38>0),PI()/2,IF(AND(O38=0,P38<0),PI()/2*-1,ATAN(P38/O38))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P38",
+          "O38"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA38",
+        "row": 38,
+        "col": 27,
+        "formula": "=W38*COS(X38)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W38",
+          "X38"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB38",
+        "row": 38,
+        "col": 28,
+        "formula": "=W38*SIN(X38)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W38",
+          "X38"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S39",
+        "row": 39,
+        "col": 19,
+        "formula": "=IF(AND(O39=0,P39=0),0,IF(AND(O39=0,P39>0),PI()/2,IF(AND(O39=0,P39<0),PI()/2*-1,ATAN(P39/O39))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O39",
+          "P39"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA39",
+        "row": 39,
+        "col": 27,
+        "formula": "=W39*COS(X39)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X39",
+          "W39"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB39",
+        "row": 39,
+        "col": 28,
+        "formula": "=W39*SIN(X39)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X39",
+          "W39"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S40",
+        "row": 40,
+        "col": 19,
+        "formula": "=IF(AND(O40=0,P40=0),0,IF(AND(O40=0,P40>0),PI()/2,IF(AND(O40=0,P40<0),PI()/2*-1,ATAN(P40/O40))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O40",
+          "P40"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA40",
+        "row": 40,
+        "col": 27,
+        "formula": "=W40*COS(X40)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X40",
+          "W40"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB40",
+        "row": 40,
+        "col": 28,
+        "formula": "=W40*SIN(X40)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X40",
+          "W40"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S41",
+        "row": 41,
+        "col": 19,
+        "formula": "=IF(AND(O41=0,P41=0),0,IF(AND(O41=0,P41>0),PI()/2,IF(AND(O41=0,P41<0),PI()/2*-1,ATAN(P41/O41))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P41",
+          "O41"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA41",
+        "row": 41,
+        "col": 27,
+        "formula": "=W41*COS(X41)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W41",
+          "X41"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB41",
+        "row": 41,
+        "col": 28,
+        "formula": "=W41*SIN(X41)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W41",
+          "X41"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S42",
+        "row": 42,
+        "col": 19,
+        "formula": "=IF(AND(O42=0,P42=0),0,IF(AND(O42=0,P42>0),PI()/2,IF(AND(O42=0,P42<0),PI()/2*-1,ATAN(P42/O42))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P42",
+          "O42"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA42",
+        "row": 42,
+        "col": 27,
+        "formula": "=W42*COS(X42)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W42",
+          "X42"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB42",
+        "row": 42,
+        "col": 28,
+        "formula": "=W42*SIN(X42)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W42",
+          "X42"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S43",
+        "row": 43,
+        "col": 19,
+        "formula": "=IF(AND(O43=0,P43=0),0,IF(AND(O43=0,P43>0),PI()/2,IF(AND(O43=0,P43<0),PI()/2*-1,ATAN(P43/O43))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P43",
+          "O43"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA43",
+        "row": 43,
+        "col": 27,
+        "formula": "=W43*COS(X43)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W43",
+          "X43"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB43",
+        "row": 43,
+        "col": 28,
+        "formula": "=W43*SIN(X43)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W43",
+          "X43"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S44",
+        "row": 44,
+        "col": 19,
+        "formula": "=IF(AND(O44=0,P44=0),0,IF(AND(O44=0,P44>0),PI()/2,IF(AND(O44=0,P44<0),PI()/2*-1,ATAN(P44/O44))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P44",
+          "O44"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA44",
+        "row": 44,
+        "col": 27,
+        "formula": "=W44*COS(X44)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W44",
+          "X44"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB44",
+        "row": 44,
+        "col": 28,
+        "formula": "=W44*SIN(X44)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W44",
+          "X44"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S45",
+        "row": 45,
+        "col": 19,
+        "formula": "=IF(AND(O45=0,P45=0),0,IF(AND(O45=0,P45>0),PI()/2,IF(AND(O45=0,P45<0),PI()/2*-1,ATAN(P45/O45))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O45",
+          "P45"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA45",
+        "row": 45,
+        "col": 27,
+        "formula": "=W45*COS(X45)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X45",
+          "W45"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB45",
+        "row": 45,
+        "col": 28,
+        "formula": "=W45*SIN(X45)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X45",
+          "W45"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S46",
+        "row": 46,
+        "col": 19,
+        "formula": "=IF(AND(O46=0,P46=0),0,IF(AND(O46=0,P46>0),PI()/2,IF(AND(O46=0,P46<0),PI()/2*-1,ATAN(P46/O46))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O46",
+          "P46"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA46",
+        "row": 46,
+        "col": 27,
+        "formula": "=W46*COS(X46)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W46",
+          "X46"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB46",
+        "row": 46,
+        "col": 28,
+        "formula": "=W46*SIN(X46)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W46",
+          "X46"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S47",
+        "row": 47,
+        "col": 19,
+        "formula": "=IF(AND(O47=0,P47=0),0,IF(AND(O47=0,P47>0),PI()/2,IF(AND(O47=0,P47<0),PI()/2*-1,ATAN(P47/O47))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P47",
+          "O47"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA47",
+        "row": 47,
+        "col": 27,
+        "formula": "=W47*COS(X47)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W47",
+          "X47"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB47",
+        "row": 47,
+        "col": 28,
+        "formula": "=W47*SIN(X47)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W47",
+          "X47"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S48",
+        "row": 48,
+        "col": 19,
+        "formula": "=IF(AND(O48=0,P48=0),0,IF(AND(O48=0,P48>0),PI()/2,IF(AND(O48=0,P48<0),PI()/2*-1,ATAN(P48/O48))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O48",
+          "P48"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA48",
+        "row": 48,
+        "col": 27,
+        "formula": "=W48*COS(X48)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W48",
+          "X48"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB48",
+        "row": 48,
+        "col": 28,
+        "formula": "=W48*SIN(X48)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W48",
+          "X48"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S49",
+        "row": 49,
+        "col": 19,
+        "formula": "=IF(AND(O49=0,P49=0),0,IF(AND(O49=0,P49>0),PI()/2,IF(AND(O49=0,P49<0),PI()/2*-1,ATAN(P49/O49))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P49",
+          "O49"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA49",
+        "row": 49,
+        "col": 27,
+        "formula": "=W49*COS(X49)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W49",
+          "X49"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB49",
+        "row": 49,
+        "col": 28,
+        "formula": "=W49*SIN(X49)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W49",
+          "X49"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S50",
+        "row": 50,
+        "col": 19,
+        "formula": "=IF(AND(O50=0,P50=0),0,IF(AND(O50=0,P50>0),PI()/2,IF(AND(O50=0,P50<0),PI()/2*-1,ATAN(P50/O50))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O50",
+          "P50"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "S51",
+        "row": 51,
+        "col": 19,
+        "formula": "=IF(AND(O51=0,P51=0),0,IF(AND(O51=0,P51>0),PI()/2,IF(AND(O51=0,P51<0),PI()/2*-1,ATAN(P51/O51))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P51",
+          "O51"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA51",
+        "row": 51,
+        "col": 27,
+        "formula": "=W51*COS(X51)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W51",
+          "X51"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB51",
+        "row": 51,
+        "col": 28,
+        "formula": "=W51*SIN(X51)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W51",
+          "X51"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S52",
+        "row": 52,
+        "col": 19,
+        "formula": "=IF(AND(O52=0,P52=0),0,IF(AND(O52=0,P52>0),PI()/2,IF(AND(O52=0,P52<0),PI()/2*-1,ATAN(P52/O52))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P52",
+          "O52"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA52",
+        "row": 52,
+        "col": 27,
+        "formula": "=W52*COS(X52)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W52",
+          "X52"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB52",
+        "row": 52,
+        "col": 28,
+        "formula": "=W52*SIN(X52)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W52",
+          "X52"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S53",
+        "row": 53,
+        "col": 19,
+        "formula": "=IF(AND(O53=0,P53=0),0,IF(AND(O53=0,P53>0),PI()/2,IF(AND(O53=0,P53<0),PI()/2*-1,ATAN(P53/O53))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P53",
+          "O53"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA53",
+        "row": 53,
+        "col": 27,
+        "formula": "=W53*COS(X53)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W53",
+          "X53"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB53",
+        "row": 53,
+        "col": 28,
+        "formula": "=W53*SIN(X53)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W53",
+          "X53"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S54",
+        "row": 54,
+        "col": 19,
+        "formula": "=IF(AND(O54=0,P54=0),0,IF(AND(O54=0,P54>0),PI()/2,IF(AND(O54=0,P54<0),PI()/2*-1,ATAN(P54/O54))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P54",
+          "O54"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA54",
+        "row": 54,
+        "col": 27,
+        "formula": "=W54*COS(X54)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W54",
+          "X54"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB54",
+        "row": 54,
+        "col": 28,
+        "formula": "=W54*SIN(X54)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W54",
+          "X54"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S55",
+        "row": 55,
+        "col": 19,
+        "formula": "=IF(AND(O55=0,P55=0),0,IF(AND(O55=0,P55>0),PI()/2,IF(AND(O55=0,P55<0),PI()/2*-1,ATAN(P55/O55))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P55",
+          "O55"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA55",
+        "row": 55,
+        "col": 27,
+        "formula": "=W55*COS(X55)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W55",
+          "X55"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB55",
+        "row": 55,
+        "col": 28,
+        "formula": "=W55*SIN(X55)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W55",
+          "X55"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S56",
+        "row": 56,
+        "col": 19,
+        "formula": "=IF(AND(O56=0,P56=0),0,IF(AND(O56=0,P56>0),PI()/2,IF(AND(O56=0,P56<0),PI()/2*-1,ATAN(P56/O56))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P56",
+          "O56"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA56",
+        "row": 56,
+        "col": 27,
+        "formula": "=W56*COS(X56)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X56",
+          "W56"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB56",
+        "row": 56,
+        "col": 28,
+        "formula": "=W56*SIN(X56)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X56",
+          "W56"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S57",
+        "row": 57,
+        "col": 19,
+        "formula": "=IF(AND(O57=0,P57=0),0,IF(AND(O57=0,P57>0),PI()/2,IF(AND(O57=0,P57<0),PI()/2*-1,ATAN(P57/O57))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O57",
+          "P57"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA57",
+        "row": 57,
+        "col": 27,
+        "formula": "=W57*COS(X57)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W57",
+          "X57"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB57",
+        "row": 57,
+        "col": 28,
+        "formula": "=W57*SIN(X57)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W57",
+          "X57"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S58",
+        "row": 58,
+        "col": 19,
+        "formula": "=IF(AND(O58=0,P58=0),0,IF(AND(O58=0,P58>0),PI()/2,IF(AND(O58=0,P58<0),PI()/2*-1,ATAN(P58/O58))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O58",
+          "P58"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA58",
+        "row": 58,
+        "col": 27,
+        "formula": "=W58*COS(X58)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W58",
+          "X58"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB58",
+        "row": 58,
+        "col": 28,
+        "formula": "=W58*SIN(X58)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W58",
+          "X58"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S59",
+        "row": 59,
+        "col": 19,
+        "formula": "=IF(AND(O59=0,P59=0),0,IF(AND(O59=0,P59>0),PI()/2,IF(AND(O59=0,P59<0),PI()/2*-1,ATAN(P59/O59))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O59",
+          "P59"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA59",
+        "row": 59,
+        "col": 27,
+        "formula": "=W59*COS(X59)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W59",
+          "X59"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB59",
+        "row": 59,
+        "col": 28,
+        "formula": "=W59*SIN(X59)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W59",
+          "X59"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S60",
+        "row": 60,
+        "col": 19,
+        "formula": "=IF(AND(O60=0,P60=0),0,IF(AND(O60=0,P60>0),PI()/2,IF(AND(O60=0,P60<0),PI()/2*-1,ATAN(P60/O60))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O60",
+          "P60"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA60",
+        "row": 60,
+        "col": 27,
+        "formula": "=W60*COS(X60)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W60",
+          "X60"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB60",
+        "row": 60,
+        "col": 28,
+        "formula": "=W60*SIN(X60)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W60",
+          "X60"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S61",
+        "row": 61,
+        "col": 19,
+        "formula": "=IF(AND(O61=0,P61=0),0,IF(AND(O61=0,P61>0),PI()/2,IF(AND(O61=0,P61<0),PI()/2*-1,ATAN(P61/O61))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P61",
+          "O61"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA61",
+        "row": 61,
+        "col": 27,
+        "formula": "=W61*COS(X61)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W61",
+          "X61"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB61",
+        "row": 61,
+        "col": 28,
+        "formula": "=W61*SIN(X61)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W61",
+          "X61"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S62",
+        "row": 62,
+        "col": 19,
+        "formula": "=IF(AND(O62=0,P62=0),0,IF(AND(O62=0,P62>0),PI()/2,IF(AND(O62=0,P62<0),PI()/2*-1,ATAN(P62/O62))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P62",
+          "O62"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA62",
+        "row": 62,
+        "col": 27,
+        "formula": "=W62*COS(X62)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W62",
+          "X62"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB62",
+        "row": 62,
+        "col": 28,
+        "formula": "=W62*SIN(X62)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W62",
+          "X62"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S63",
+        "row": 63,
+        "col": 19,
+        "formula": "=IF(AND(O63=0,P63=0),0,IF(AND(O63=0,P63>0),PI()/2,IF(AND(O63=0,P63<0),PI()/2*-1,ATAN(P63/O63))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O63",
+          "P63"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA63",
+        "row": 63,
+        "col": 27,
+        "formula": "=W63*COS(X63)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W63",
+          "X63"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB63",
+        "row": 63,
+        "col": 28,
+        "formula": "=W63*SIN(X63)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W63",
+          "X63"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S64",
+        "row": 64,
+        "col": 19,
+        "formula": "=IF(AND(O64=0,P64=0),0,IF(AND(O64=0,P64>0),PI()/2,IF(AND(O64=0,P64<0),PI()/2*-1,ATAN(P64/O64))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O64",
+          "P64"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA64",
+        "row": 64,
+        "col": 27,
+        "formula": "=W64*COS(X64)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W64",
+          "X64"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB64",
+        "row": 64,
+        "col": 28,
+        "formula": "=W64*SIN(X64)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W64",
+          "X64"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S65",
+        "row": 65,
+        "col": 19,
+        "formula": "=IF(AND(O65=0,P65=0),0,IF(AND(O65=0,P65>0),PI()/2,IF(AND(O65=0,P65<0),PI()/2*-1,ATAN(P65/O65))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P65",
+          "O65"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA65",
+        "row": 65,
+        "col": 27,
+        "formula": "=W65*COS(X65)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X65",
+          "W65"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB65",
+        "row": 65,
+        "col": 28,
+        "formula": "=W65*SIN(X65)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X65",
+          "W65"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S66",
+        "row": 66,
+        "col": 19,
+        "formula": "=IF(AND(O66=0,P66=0),0,IF(AND(O66=0,P66>0),PI()/2,IF(AND(O66=0,P66<0),PI()/2*-1,ATAN(P66/O66))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O66",
+          "P66"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA66",
+        "row": 66,
+        "col": 27,
+        "formula": "=W66*COS(X66)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W66",
+          "X66"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB66",
+        "row": 66,
+        "col": 28,
+        "formula": "=W66*SIN(X66)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W66",
+          "X66"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S67",
+        "row": 67,
+        "col": 19,
+        "formula": "=IF(AND(O67=0,P67=0),0,IF(AND(O67=0,P67>0),PI()/2,IF(AND(O67=0,P67<0),PI()/2*-1,ATAN(P67/O67))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O67",
+          "P67"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA67",
+        "row": 67,
+        "col": 27,
+        "formula": "=W67*COS(X67)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W67",
+          "X67"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB67",
+        "row": 67,
+        "col": 28,
+        "formula": "=W67*SIN(X67)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W67",
+          "X67"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S68",
+        "row": 68,
+        "col": 19,
+        "formula": "=IF(AND(O68=0,P68=0),0,IF(AND(O68=0,P68>0),PI()/2,IF(AND(O68=0,P68<0),PI()/2*-1,ATAN(P68/O68))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O68",
+          "P68"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA68",
+        "row": 68,
+        "col": 27,
+        "formula": "=W68*COS(X68)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X68",
+          "W68"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB68",
+        "row": 68,
+        "col": 28,
+        "formula": "=W68*SIN(X68)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X68",
+          "W68"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S69",
+        "row": 69,
+        "col": 19,
+        "formula": "=IF(AND(O69=0,P69=0),0,IF(AND(O69=0,P69>0),PI()/2,IF(AND(O69=0,P69<0),PI()/2*-1,ATAN(P69/O69))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O69",
+          "P69"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA69",
+        "row": 69,
+        "col": 27,
+        "formula": "=W69*COS(X69)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X69",
+          "W69"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB69",
+        "row": 69,
+        "col": 28,
+        "formula": "=W69*SIN(X69)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X69",
+          "W69"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S70",
+        "row": 70,
+        "col": 19,
+        "formula": "=IF(AND(O70=0,P70=0),0,IF(AND(O70=0,P70>0),PI()/2,IF(AND(O70=0,P70<0),PI()/2*-1,ATAN(P70/O70))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P70",
+          "O70"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA70",
+        "row": 70,
+        "col": 27,
+        "formula": "=W70*COS(X70)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W70",
+          "X70"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB70",
+        "row": 70,
+        "col": 28,
+        "formula": "=W70*SIN(X70)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W70",
+          "X70"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S71",
+        "row": 71,
+        "col": 19,
+        "formula": "=IF(AND(O71=0,P71=0),0,IF(AND(O71=0,P71>0),PI()/2,IF(AND(O71=0,P71<0),PI()/2*-1,ATAN(P71/O71))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P71",
+          "O71"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA71",
+        "row": 71,
+        "col": 27,
+        "formula": "=W71*COS(X71)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X71",
+          "W71"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB71",
+        "row": 71,
+        "col": 28,
+        "formula": "=W71*SIN(X71)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X71",
+          "W71"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S72",
+        "row": 72,
+        "col": 19,
+        "formula": "=IF(AND(O72=0,P72=0),0,IF(AND(O72=0,P72>0),PI()/2,IF(AND(O72=0,P72<0),PI()/2*-1,ATAN(P72/O72))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O72",
+          "P72"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA72",
+        "row": 72,
+        "col": 27,
+        "formula": "=W72*COS(X72)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W72",
+          "X72"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB72",
+        "row": 72,
+        "col": 28,
+        "formula": "=W72*SIN(X72)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W72",
+          "X72"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S73",
+        "row": 73,
+        "col": 19,
+        "formula": "=IF(AND(O73=0,P73=0),0,IF(AND(O73=0,P73>0),PI()/2,IF(AND(O73=0,P73<0),PI()/2*-1,ATAN(P73/O73))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P73",
+          "O73"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA73",
+        "row": 73,
+        "col": 27,
+        "formula": "=W73*COS(X73)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X73",
+          "W73"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB73",
+        "row": 73,
+        "col": 28,
+        "formula": "=W73*SIN(X73)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X73",
+          "W73"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S74",
+        "row": 74,
+        "col": 19,
+        "formula": "=IF(AND(O74=0,P74=0),0,IF(AND(O74=0,P74>0),PI()/2,IF(AND(O74=0,P74<0),PI()/2*-1,ATAN(P74/O74))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P74",
+          "O74"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA74",
+        "row": 74,
+        "col": 27,
+        "formula": "=W74*COS(X74)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X74",
+          "W74"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB74",
+        "row": 74,
+        "col": 28,
+        "formula": "=W74*SIN(X74)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X74",
+          "W74"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S75",
+        "row": 75,
+        "col": 19,
+        "formula": "=IF(AND(O75=0,P75=0),0,IF(AND(O75=0,P75>0),PI()/2,IF(AND(O75=0,P75<0),PI()/2*-1,ATAN(P75/O75))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P75",
+          "O75"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA75",
+        "row": 75,
+        "col": 27,
+        "formula": "=W75*COS(X75)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W75",
+          "X75"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB75",
+        "row": 75,
+        "col": 28,
+        "formula": "=W75*SIN(X75)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W75",
+          "X75"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S76",
+        "row": 76,
+        "col": 19,
+        "formula": "=IF(AND(O76=0,P76=0),0,IF(AND(O76=0,P76>0),PI()/2,IF(AND(O76=0,P76<0),PI()/2*-1,ATAN(P76/O76))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O76",
+          "P76"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA76",
+        "row": 76,
+        "col": 27,
+        "formula": "=W76*COS(X76)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W76",
+          "X76"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB76",
+        "row": 76,
+        "col": 28,
+        "formula": "=W76*SIN(X76)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W76",
+          "X76"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S77",
+        "row": 77,
+        "col": 19,
+        "formula": "=IF(AND(O77=0,P77=0),0,IF(AND(O77=0,P77>0),PI()/2,IF(AND(O77=0,P77<0),PI()/2*-1,ATAN(P77/O77))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O77",
+          "P77"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA77",
+        "row": 77,
+        "col": 27,
+        "formula": "=W77*COS(X77)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W77",
+          "X77"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB77",
+        "row": 77,
+        "col": 28,
+        "formula": "=W77*SIN(X77)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W77",
+          "X77"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S78",
+        "row": 78,
+        "col": 19,
+        "formula": "=IF(AND(O78=0,P78=0),0,IF(AND(O78=0,P78>0),PI()/2,IF(AND(O78=0,P78<0),PI()/2*-1,ATAN(P78/O78))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P78",
+          "O78"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA78",
+        "row": 78,
+        "col": 27,
+        "formula": "=W78*COS(X78)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W78",
+          "X78"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB78",
+        "row": 78,
+        "col": 28,
+        "formula": "=W78*SIN(X78)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W78",
+          "X78"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S79",
+        "row": 79,
+        "col": 19,
+        "formula": "=IF(AND(O79=0,P79=0),0,IF(AND(O79=0,P79>0),PI()/2,IF(AND(O79=0,P79<0),PI()/2*-1,ATAN(P79/O79))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O79",
+          "P79"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA79",
+        "row": 79,
+        "col": 27,
+        "formula": "=W79*COS(X79)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W79",
+          "X79"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB79",
+        "row": 79,
+        "col": 28,
+        "formula": "=W79*SIN(X79)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W79",
+          "X79"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S80",
+        "row": 80,
+        "col": 19,
+        "formula": "=IF(AND(O80=0,P80=0),0,IF(AND(O80=0,P80>0),PI()/2,IF(AND(O80=0,P80<0),PI()/2*-1,ATAN(P80/O80))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O80",
+          "P80"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA80",
+        "row": 80,
+        "col": 27,
+        "formula": "=W80*COS(X80)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "W80",
+          "X80"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB80",
+        "row": 80,
+        "col": 28,
+        "formula": "=W80*SIN(X80)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "W80",
+          "X80"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S81",
+        "row": 81,
+        "col": 19,
+        "formula": "=IF(AND(O81=0,P81=0),0,IF(AND(O81=0,P81>0),PI()/2,IF(AND(O81=0,P81<0),PI()/2*-1,ATAN(P81/O81))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P81",
+          "O81"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "S82",
+        "row": 82,
+        "col": 19,
+        "formula": "=IF(AND(O82=0,P82=0),0,IF(AND(O82=0,P82>0),PI()/2,IF(AND(O82=0,P82<0),PI()/2*-1,ATAN(P82/O82))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "P82",
+          "O82"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA82",
+        "row": 82,
+        "col": 27,
+        "formula": "=W82*COS(X82)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X82",
+          "W82"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB82",
+        "row": 82,
+        "col": 28,
+        "formula": "=W82*SIN(X82)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X82",
+          "W82"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "S83",
+        "row": 83,
+        "col": 19,
+        "formula": "=IF(AND(O83=0,P83=0),0,IF(AND(O83=0,P83>0),PI()/2,IF(AND(O83=0,P83<0),PI()/2*-1,ATAN(P83/O83))))",
+        "functions_used": [
+          "ATAN"
+        ],
+        "references": [
+          "O83",
+          "P83"
+        ],
+        "constants": [
+          "2",
+          "0",
+          "1"
+        ],
+        "likely_purpose": "angle_calculation"
+      },
+      {
+        "position": "AA83",
+        "row": 83,
+        "col": 27,
+        "formula": "=W83*COS(X83)",
+        "functions_used": [
+          "COS"
+        ],
+        "references": [
+          "X83",
+          "W83"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      },
+      {
+        "position": "AB83",
+        "row": 83,
+        "col": 28,
+        "formula": "=W83*SIN(X83)",
+        "functions_used": [
+          "SIN"
+        ],
+        "references": [
+          "X83",
+          "W83"
+        ],
+        "constants": [],
+        "likely_purpose": "trigonometric_transformation"
+      }
+    ],
+    "表示データ　片線": [],
+    "建築限界数値データ　片線": []
+  },
+  "input_parameters": {
+    "表示データ計算シート　片線": {
+      "cant_inputs": [
+        {
+          "position": "D1",
+          "label": "カント",
+          "value": 2.0,
+          "adjacent_position": "E1"
+        }
+      ],
+      "curve_radius_inputs": [
+        {
+          "position": "E1",
+          "label": "曲線半径",
+          "value": 2.0,
+          "adjacent_position": "F1"
+        }
+      ],
+      "related_parameters": [
+        {
+          "position": "G1",
+          "label": "測定高さ",
+          "value": 2.0
+        }
+      ]
+    },
+    "表示データ　片線": {
+      "cant_inputs": [],
+      "curve_radius_inputs": [],
+      "related_parameters": []
+    },
+    "建築限界数値データ　片線": {
+      "cant_inputs": [],
+      "curve_radius_inputs": [],
+      "related_parameters": []
+    }
+  },
+  "coordinate_transformations": {
+    "表示データ計算シート　片線": [
+      {
+        "position": "AA3",
+        "formula": "=W3*COS(X3)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W3",
+            "X3"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB3",
+        "formula": "=W3*SIN(X3)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W3",
+            "X3"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA4",
+        "formula": "=W4*COS(X4)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X4",
+            "W4"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB4",
+        "formula": "=W4*SIN(X4)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X4",
+            "W4"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA5",
+        "formula": "=W5*COS(X5)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X5",
+            "W5"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB5",
+        "formula": "=W5*SIN(X5)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X5",
+            "W5"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA6",
+        "formula": "=W6*COS(X6)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W6",
+            "X6"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB6",
+        "formula": "=W6*SIN(X6)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W6",
+            "X6"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA7",
+        "formula": "=W7*COS(X7)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X7",
+            "W7"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB7",
+        "formula": "=W7*SIN(X7)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X7",
+            "W7"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA8",
+        "formula": "=W8*COS(X8)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W8",
+            "X8"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB8",
+        "formula": "=W8*SIN(X8)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W8",
+            "X8"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA9",
+        "formula": "=W9*COS(X9)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W9",
+            "X9"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB9",
+        "formula": "=W9*SIN(X9)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W9",
+            "X9"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA10",
+        "formula": "=W10*COS(X10)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W10",
+            "X10"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB10",
+        "formula": "=W10*SIN(X10)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W10",
+            "X10"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA11",
+        "formula": "=W11*COS(X11)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X11",
+            "W11"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB11",
+        "formula": "=W11*SIN(X11)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X11",
+            "W11"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA12",
+        "formula": "=W12*COS(X12)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X12",
+            "W12"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB12",
+        "formula": "=W12*SIN(X12)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X12",
+            "W12"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA13",
+        "formula": "=W13*COS(X13)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W13",
+            "X13"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB13",
+        "formula": "=W13*SIN(X13)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W13",
+            "X13"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA14",
+        "formula": "=W14*COS(X14)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W14",
+            "X14"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB14",
+        "formula": "=W14*SIN(X14)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W14",
+            "X14"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA15",
+        "formula": "=W15*COS(X15)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X15",
+            "W15"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB15",
+        "formula": "=W15*SIN(X15)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X15",
+            "W15"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA16",
+        "formula": "=W16*COS(X16)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W16",
+            "X16"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB16",
+        "formula": "=W16*SIN(X16)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W16",
+            "X16"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA17",
+        "formula": "=W17*COS(X17)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W17",
+            "X17"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB17",
+        "formula": "=W17*SIN(X17)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W17",
+            "X17"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA18",
+        "formula": "=W18*COS(X18)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W18",
+            "X18"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB18",
+        "formula": "=W18*SIN(X18)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W18",
+            "X18"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA19",
+        "formula": "=W19*COS(X19)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W19",
+            "X19"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB19",
+        "formula": "=W19*SIN(X19)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W19",
+            "X19"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA20",
+        "formula": "=W20*COS(X20)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W20",
+            "X20"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB20",
+        "formula": "=W20*SIN(X20)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W20",
+            "X20"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA21",
+        "formula": "=W21*COS(X21)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X21",
+            "W21"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB21",
+        "formula": "=W21*SIN(X21)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X21",
+            "W21"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA22",
+        "formula": "=W22*COS(X22)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W22",
+            "X22"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB22",
+        "formula": "=W22*SIN(X22)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W22",
+            "X22"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA23",
+        "formula": "=W23*COS(X23)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X23",
+            "W23"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB23",
+        "formula": "=W23*SIN(X23)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X23",
+            "W23"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA24",
+        "formula": "=W24*COS(X24)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W24",
+            "X24"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB24",
+        "formula": "=W24*SIN(X24)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W24",
+            "X24"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA25",
+        "formula": "=W25*COS(X25)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X25",
+            "W25"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB25",
+        "formula": "=W25*SIN(X25)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X25",
+            "W25"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA26",
+        "formula": "=W26*COS(X26)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W26",
+            "X26"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB26",
+        "formula": "=W26*SIN(X26)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W26",
+            "X26"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA27",
+        "formula": "=W27*COS(X27)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X27",
+            "W27"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB27",
+        "formula": "=W27*SIN(X27)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X27",
+            "W27"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA28",
+        "formula": "=W28*COS(X28)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X28",
+            "W28"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB28",
+        "formula": "=W28*SIN(X28)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X28",
+            "W28"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA29",
+        "formula": "=W29*COS(X29)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X29",
+            "W29"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB29",
+        "formula": "=W29*SIN(X29)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X29",
+            "W29"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA30",
+        "formula": "=W30*COS(X30)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X30",
+            "W30"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB30",
+        "formula": "=W30*SIN(X30)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X30",
+            "W30"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA31",
+        "formula": "=W31*COS(X31)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X31",
+            "W31"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB31",
+        "formula": "=W31*SIN(X31)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X31",
+            "W31"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA32",
+        "formula": "=W32*COS(X32)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X32",
+            "W32"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB32",
+        "formula": "=W32*SIN(X32)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X32",
+            "W32"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA33",
+        "formula": "=W33*COS(X33)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X33",
+            "W33"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB33",
+        "formula": "=W33*SIN(X33)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X33",
+            "W33"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA34",
+        "formula": "=W34*COS(X34)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X34",
+            "W34"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB34",
+        "formula": "=W34*SIN(X34)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X34",
+            "W34"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA35",
+        "formula": "=W35*COS(X35)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X35",
+            "W35"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB35",
+        "formula": "=W35*SIN(X35)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X35",
+            "W35"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA36",
+        "formula": "=W36*COS(X36)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W36",
+            "X36"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB36",
+        "formula": "=W36*SIN(X36)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W36",
+            "X36"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA37",
+        "formula": "=W37*COS(X37)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X37",
+            "W37"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB37",
+        "formula": "=W37*SIN(X37)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X37",
+            "W37"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA38",
+        "formula": "=W38*COS(X38)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W38",
+            "X38"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB38",
+        "formula": "=W38*SIN(X38)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W38",
+            "X38"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA39",
+        "formula": "=W39*COS(X39)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X39",
+            "W39"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB39",
+        "formula": "=W39*SIN(X39)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X39",
+            "W39"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA40",
+        "formula": "=W40*COS(X40)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X40",
+            "W40"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB40",
+        "formula": "=W40*SIN(X40)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X40",
+            "W40"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA41",
+        "formula": "=W41*COS(X41)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W41",
+            "X41"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB41",
+        "formula": "=W41*SIN(X41)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W41",
+            "X41"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA42",
+        "formula": "=W42*COS(X42)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W42",
+            "X42"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB42",
+        "formula": "=W42*SIN(X42)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W42",
+            "X42"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA43",
+        "formula": "=W43*COS(X43)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W43",
+            "X43"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB43",
+        "formula": "=W43*SIN(X43)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W43",
+            "X43"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA44",
+        "formula": "=W44*COS(X44)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W44",
+            "X44"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB44",
+        "formula": "=W44*SIN(X44)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W44",
+            "X44"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA45",
+        "formula": "=W45*COS(X45)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X45",
+            "W45"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB45",
+        "formula": "=W45*SIN(X45)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X45",
+            "W45"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA46",
+        "formula": "=W46*COS(X46)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W46",
+            "X46"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB46",
+        "formula": "=W46*SIN(X46)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W46",
+            "X46"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA47",
+        "formula": "=W47*COS(X47)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W47",
+            "X47"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB47",
+        "formula": "=W47*SIN(X47)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W47",
+            "X47"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA48",
+        "formula": "=W48*COS(X48)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W48",
+            "X48"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB48",
+        "formula": "=W48*SIN(X48)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W48",
+            "X48"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA49",
+        "formula": "=W49*COS(X49)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W49",
+            "X49"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB49",
+        "formula": "=W49*SIN(X49)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W49",
+            "X49"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA51",
+        "formula": "=W51*COS(X51)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W51",
+            "X51"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB51",
+        "formula": "=W51*SIN(X51)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W51",
+            "X51"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA52",
+        "formula": "=W52*COS(X52)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W52",
+            "X52"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB52",
+        "formula": "=W52*SIN(X52)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W52",
+            "X52"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA53",
+        "formula": "=W53*COS(X53)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W53",
+            "X53"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB53",
+        "formula": "=W53*SIN(X53)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W53",
+            "X53"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA54",
+        "formula": "=W54*COS(X54)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W54",
+            "X54"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB54",
+        "formula": "=W54*SIN(X54)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W54",
+            "X54"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA55",
+        "formula": "=W55*COS(X55)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W55",
+            "X55"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB55",
+        "formula": "=W55*SIN(X55)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W55",
+            "X55"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA56",
+        "formula": "=W56*COS(X56)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X56",
+            "W56"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB56",
+        "formula": "=W56*SIN(X56)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X56",
+            "W56"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA57",
+        "formula": "=W57*COS(X57)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W57",
+            "X57"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB57",
+        "formula": "=W57*SIN(X57)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W57",
+            "X57"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA58",
+        "formula": "=W58*COS(X58)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W58",
+            "X58"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB58",
+        "formula": "=W58*SIN(X58)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W58",
+            "X58"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA59",
+        "formula": "=W59*COS(X59)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W59",
+            "X59"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB59",
+        "formula": "=W59*SIN(X59)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W59",
+            "X59"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA60",
+        "formula": "=W60*COS(X60)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W60",
+            "X60"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB60",
+        "formula": "=W60*SIN(X60)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W60",
+            "X60"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA61",
+        "formula": "=W61*COS(X61)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W61",
+            "X61"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB61",
+        "formula": "=W61*SIN(X61)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W61",
+            "X61"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA62",
+        "formula": "=W62*COS(X62)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W62",
+            "X62"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB62",
+        "formula": "=W62*SIN(X62)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W62",
+            "X62"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA63",
+        "formula": "=W63*COS(X63)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W63",
+            "X63"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB63",
+        "formula": "=W63*SIN(X63)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W63",
+            "X63"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA64",
+        "formula": "=W64*COS(X64)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W64",
+            "X64"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB64",
+        "formula": "=W64*SIN(X64)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W64",
+            "X64"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA65",
+        "formula": "=W65*COS(X65)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X65",
+            "W65"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB65",
+        "formula": "=W65*SIN(X65)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X65",
+            "W65"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA66",
+        "formula": "=W66*COS(X66)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W66",
+            "X66"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB66",
+        "formula": "=W66*SIN(X66)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W66",
+            "X66"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA67",
+        "formula": "=W67*COS(X67)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W67",
+            "X67"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB67",
+        "formula": "=W67*SIN(X67)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W67",
+            "X67"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA68",
+        "formula": "=W68*COS(X68)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X68",
+            "W68"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB68",
+        "formula": "=W68*SIN(X68)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X68",
+            "W68"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA69",
+        "formula": "=W69*COS(X69)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X69",
+            "W69"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB69",
+        "formula": "=W69*SIN(X69)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X69",
+            "W69"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA70",
+        "formula": "=W70*COS(X70)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W70",
+            "X70"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB70",
+        "formula": "=W70*SIN(X70)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W70",
+            "X70"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA71",
+        "formula": "=W71*COS(X71)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X71",
+            "W71"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB71",
+        "formula": "=W71*SIN(X71)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X71",
+            "W71"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA72",
+        "formula": "=W72*COS(X72)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W72",
+            "X72"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB72",
+        "formula": "=W72*SIN(X72)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W72",
+            "X72"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA73",
+        "formula": "=W73*COS(X73)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X73",
+            "W73"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB73",
+        "formula": "=W73*SIN(X73)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X73",
+            "W73"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA74",
+        "formula": "=W74*COS(X74)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X74",
+            "W74"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB74",
+        "formula": "=W74*SIN(X74)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X74",
+            "W74"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA75",
+        "formula": "=W75*COS(X75)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W75",
+            "X75"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB75",
+        "formula": "=W75*SIN(X75)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W75",
+            "X75"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA76",
+        "formula": "=W76*COS(X76)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W76",
+            "X76"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB76",
+        "formula": "=W76*SIN(X76)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W76",
+            "X76"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA77",
+        "formula": "=W77*COS(X77)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W77",
+            "X77"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB77",
+        "formula": "=W77*SIN(X77)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W77",
+            "X77"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA78",
+        "formula": "=W78*COS(X78)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W78",
+            "X78"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB78",
+        "formula": "=W78*SIN(X78)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W78",
+            "X78"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA79",
+        "formula": "=W79*COS(X79)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W79",
+            "X79"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB79",
+        "formula": "=W79*SIN(X79)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W79",
+            "X79"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA80",
+        "formula": "=W80*COS(X80)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "W80",
+            "X80"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB80",
+        "formula": "=W80*SIN(X80)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "W80",
+            "X80"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA82",
+        "formula": "=W82*COS(X82)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X82",
+            "W82"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB82",
+        "formula": "=W82*SIN(X82)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X82",
+            "W82"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AA83",
+        "formula": "=W83*COS(X83)",
+        "analysis": {
+          "functions": [
+            "COS"
+          ],
+          "references": [
+            "X83",
+            "W83"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      },
+      {
+        "position": "AB83",
+        "formula": "=W83*SIN(X83)",
+        "analysis": {
+          "functions": [
+            "SIN"
+          ],
+          "references": [
+            "X83",
+            "W83"
+          ],
+          "constants": []
+        },
+        "coordinate_type": "likely_y_coordinate"
+      }
+    ],
+    "表示データ　片線": [],
+    "建築限界数値データ　片線": []
+  },
+  "summary": {
+    "表示データ計算シート　片線": {
+      "trigonometric_count": 240,
+      "cant_inputs": 1,
+      "curve_inputs": 1,
+      "coordinate_formulas": 158
+    },
+    "表示データ　片線": {
+      "trigonometric_count": 0,
+      "cant_inputs": 0,
+      "curve_inputs": 0,
+      "coordinate_formulas": 0
+    },
+    "建築限界数値データ　片線": {
+      "trigonometric_count": 0,
+      "cant_inputs": 0,
+      "curve_inputs": 0,
+      "coordinate_formulas": 0
+    }
+  }
+}

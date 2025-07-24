@@ -1,0 +1,55 @@
+{
+  "sheet_name": "限界余裕測定図 片線",
+  "dimensions": {
+    "max_row": 43,
+    "max_column": 17
+  },
+  "parameters": {
+    "測定離れ": {
+      "position": "B13",
+      "value": 2110.0
+    },
+    "測定高さ": {
+      "position": "D13",
+      "value": 3150.0
+    }
+  },
+  "graph_data": {
+    "coordinates": [
+      {
+        "x": 2110,
+        "y": 3150,
+        "x_pos": "B14",
+        "y_pos": "D14"
+      }
+    ],
+    "boundaries": null,
+    "scale_info": {}
+  },
+  "formulas": [],
+  "cant_relations": [
+    {
+      "position": "D10",
+      "content": "カント",
+      "adjacent_values": {
+        "B8": "電源種別：",
+        "C8": "直流区間",
+        "B10": "曲線半径",
+        "C11": "m",
+        "E11": "mm"
+      }
+    }
+  ],
+  "curve_radius_relations": [
+    {
+      "position": "B10",
+      "content": "曲線半径",
+      "adjacent_values": {
+        "B8": "電源種別：",
+        "C8": "直流区間",
+        "D10": "カント",
+        "C11": "m"
+      }
+    }
+  ]
+}
