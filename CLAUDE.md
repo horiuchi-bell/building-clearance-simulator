@@ -1,9 +1,9 @@
 # Claude Code プロジェクト設定
 
 ## プロジェクト情報
-- プロジェクト名: outlook-スケジュール調整
-- 作成日: 2025-07-13
-- 説明: Outlookのスケジュール調整機能を開発するプロジェクト
+- プロジェクト名: 建築限界プロジェクト
+- 作成日: 2025-07-16
+- 説明: 建築限界に関する開発プロジェクト
 
 ## 開発環境
 - プラットフォーム: Linux
@@ -120,7 +120,7 @@ def setup_japanese_font(self):
 ```
 my-project/
 ├── github_config.json      # 上位フォルダ（全プロジェクト共通）
-└── outlook-スケジュール調整/
+└── 建築限界プロジェクト/
     ├── project_config.json  # プロジェクト固有設定
     └── CLAUDE.md           # このファイル
 ```
@@ -174,7 +174,7 @@ with open('../github_config.json', 'r') as f:
 import subprocess
 subprocess.run(['git', 'config', 'user.name', git['user_name']])
 subprocess.run(['git', 'config', 'user.email', git['user_email']])
-subprocess.run(['git', 'remote', 'set-url', 'origin', f'https://{github[\"personal_access_token\"]}@github.com/{github[\"username\"]}/{github[\"repositories\"][\"outlook_scheduler\"][\"name\"]}.git'])
+subprocess.run(['git', 'remote', 'set-url', 'origin', f'https://{github[\"personal_access_token\"]}@github.com/{github[\"username\"]}/{github[\"repositories\"][\"building_clearance\"][\"name\"]}.git'])
 "
 ```
 
@@ -183,6 +183,32 @@ subprocess.run(['git', 'remote', 'set-url', 'origin', f'https://{github[\"person
 - **Personal Access Tokenは最小権限（repo）のみ**
 - **定期的なトークンの更新**
 - **本番環境では環境変数を使用**
+
+## 🔔 通知システム設定
+**重要：作業進捗の通知機能を活用**
+
+### 通知システムファイル
+- `notification_system.py`: 基本通知機能
+- `auto_notify.py`: 自動通知スクリプト
+- `claude_notification_wrapper.py`: Claude作業通知ラッパー
+- `start_notifications.sh`: 通知システム起動スクリプト
+
+### 通知コマンド
+```bash
+# 通知システム起動
+./start_notifications.sh
+
+# 手動通知送信
+python auto_notify.py "メッセージ内容"
+
+# Claude作業通知
+python claude_notification_wrapper.py "作業内容"
+```
+
+### 通知設定
+- **作業開始時**: プロジェクト開始を通知
+- **重要な処理完了時**: ファイル作成、エラー解決等を通知
+- **作業完了時**: 全タスク完了を通知
 
 ## 利用可能なコマンド
 
@@ -216,25 +242,20 @@ source venv/bin/activate && jupyter lab  # Jupyter Lab起動
 source venv/bin/activate && ipython      # IPython起動
 ```
 
-### Office・PDF処理
-```bash
-source venv/bin/activate && python office_test.py  # テストファイル実行
-# Excel: openpyxl, xlsxwriter, xlrd
-# Word: python-docx  
-# PowerPoint: python-pptx
-# PDF: PyPDF2, pdfplumber, reportlab, pymupdf
-```
-
 ## プロジェクト構造
 ```
-outlook-スケジュール調整/
+建築限界プロジェクト/
 ├── CLAUDE.md (このファイル - 基本設定)
 ├── project_history.md (プロジェクト履歴)
+├── notification_system.py (基本通知機能)
+├── auto_notify.py (自動通知スクリプト)
+├── claude_notification_wrapper.py (Claude作業通知)
+├── start_notifications.sh (通知システム起動)
 ├── venv/ (Python仮想環境)
 │   ├── bin/activate (仮想環境有効化スクリプト)
 │   └── lib/python3.12/site-packages/ (インストール済みライブラリ)
 └── (今後のファイル)
-    ├── outlook_scheduler.py (メインスクリプト)
+    ├── building_clearance.py (メインスクリプト)
     ├── config/ (設定ファイル)
     └── docs/ (ドキュメント)
 ```
@@ -247,6 +268,61 @@ outlook-スケジュール調整/
 - 影響範囲：（どの部分に影響するか）
 - 理由：（なぜ必要か）
 - 許可をお願いします：はい/いいえ
+
+## 📊 Excelファイル構造（建築限界計算）
+
+### 主要ファイル
+- **OIRANシュミレーター（修正）20231215.xlsx**: メイン計算ファイル
+
+### 重要シート構成
+
+#### 1. 限界余裕測定図 片線シート（入力インターフェース）
+- **D11**: カント入力 (mm)
+- **B11**: 曲線半径入力 (m)  
+- **B14**: 測定離れ入力 (mm)
+- **D14**: 測定高さ入力 (mm)
+- **D18**: 必要離れ結果 `=ROUNDUP('必要離れ計算シート 片線'!D8,0)`
+- **B24**: 限界余裕結果 `=IF(OR('限界判定計算シート　片線'!D24,支障計算不能？),"----",ROUNDDOWN(IF('限界余裕計算シート 片線'!AG2<5,0,IF('限界余裕計算シート 片線'!AG2<13,SQRT('限界余裕計算シート 片線'!AG2^2-25),'限界余裕計算シート 片線'!AG2)),0))`
+
+#### 2. 必要離れ計算シート 片線（必要離れ計算エンジン）
+- **A1**: 区間タイプ（直流区間/交流区間/非電化区間）
+- **D8**: 必要離れ計算結果 `=IF(A1="直流区間",SUM(D15:D20),IF(A1="交流区間",SUM(G15:G20),IF(A1="非電化区間",SUM(J15:J18),0)))`
+- **D18**: 高さ3156-3823mm範囲の計算 `=SQRT(2150^2-(yd-2150)^2)+w+y*SIN(ｔ)`
+
+#### 3. 限界余裕計算シート 片線（限界余裕計算エンジン）
+- **AG2**: 限界余裕の最短距離計算結果
+- **I1**: 傾斜角度 `=ATAN(カント/1067)` (RAD)
+
+#### 4. 表示データ計算シート　片線（表示用座標計算）
+- **I1**: 傾斜角度のラジアン値
+
+### 計算方式の詳細
+
+#### カント計算
+- **傾斜角度**: `θ = ATAN(カント/1067)` = 0.093448 rad (カント100mmの場合)
+- **カント補正**: `測定高さ × SIN(θ)` = 331.3mm (理論値)
+- **Excel実測**: 345.3mm (係数: 0.097268)
+- **差異**: 約14mm (4%の違い)
+
+#### 必要離れ計算（高さ3550mmの場合）
+- **基本建築限界離れ**: `SQRT(2150² - (3550-2150)²)` = 1631.7mm
+- **Excel計算式**: `基本建築限界離れ + 拡幅量 + 測定高さ×SIN(傾斜角度)`
+- **理論結果**: 1963.0mm
+- **Excel実測**: 1977mm
+- **差異**: -14.0mm
+
+#### 限界余裕計算
+Excel計算式: 
+```excel
+=IF(AG2<5, 0, IF(AG2<13, SQRT(AG2²-25), AG2))
+```
+これはv8で実装済みの計算方法と同一
+
+### 📝 分析結果まとめ
+- Excelの傾斜角度計算は理論値と一致（0.093448 rad）
+- カント補正で約4%の係数差異が存在
+- 限界余裕の計算方法はv8と同一
+- 14mmの差異は一貫して発生
 
 ## 注意事項
 - このプロジェクトは新規作成されたため、まだ具体的な設定がありません
